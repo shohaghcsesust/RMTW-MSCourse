@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PRISMA 2020 Flow Diagram</title>
+<style>
+  body { margin: 0; padding: 20px; background: #ffffff; font-family: 'Times New Roman', Times, serif; }
+  svg { display: block; margin: 0 auto; }
+  .box { fill: #ffffff; stroke: #2c3e6b; stroke-width: 1.5; }
+  .phase-box { fill: #2c3e6b; }
+  .exclude-box { fill: #fff5f5; stroke: #c0392b; stroke-width: 1.5; }
+  .include-box { fill: #f0f7ff; stroke: #2c3e6b; stroke-width: 2; }
+  .db-box { fill: #eef2ff; stroke: #2c3e6b; stroke-width: 1.2; }
+  .arrow { stroke: #2c3e6b; stroke-width: 1.8; fill: none; marker-end: url(#arrowhead); }
+  .arrow-red { stroke: #c0392b; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-red); }
+  .phase-label { fill: #ffffff; font-weight: bold; font-size: 11px; letter-spacing: 1px; }
+  .title-text { font-size: 10px; font-weight: bold; fill: #2c3e6b; text-anchor: middle; }
+  .count-text { font-size: 13px; font-weight: bold; fill: #2c3e6b; text-anchor: middle; }
+  .body-text { font-size: 9px; fill: #333; text-anchor: middle; }
+  .exclude-text { font-size: 8.5px; fill: #c0392b; text-anchor: start; }
+  .db-label { font-size: 8.5px; fill: #2c3e6b; text-anchor: middle; }
+</style>
+</head>
+<body>
+<svg width="760" height="820" viewBox="0 0 760 820">
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#2c3e6b"/>
+    </marker>
+    <marker id="arrowhead-red" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="380" y="22" font-size="13" font-weight="bold" fill="#2c3e6b" text-anchor="middle" font-family="Times New Roman, Times, serif">PRISMA 2020 Flow Diagram — Cloud Forensics Systematic Review</text>
+
+  <!-- ===== PHASE LABELS (left sidebar) ===== -->
+  <!-- Identification -->
+  <rect x="8" y="35" width="86" height="205" rx="5" class="phase-box"/>
+  <text transform="rotate(-90,51,137)" x="0" y="0" font-size="10" font-weight="bold" fill="white" text-anchor="middle" font-family="Times New Roman, Times, serif">IDENTIFICATION</text>
+
+  <!-- Screening -->
+  <rect x="8" y="255" width="86" height="130" rx="5" class="phase-box"/>
+  <text transform="rotate(-90,51,320)" x="0" y="0" font-size="10" font-weight="bold" fill="white" text-anchor="middle" font-family="Times New Roman, Times, serif">SCREENING</text>
+
+  <!-- Eligibility -->
+  <rect x="8" y="400" width="86" height="175" rx="5" class="phase-box"/>
+  <text transform="rotate(-90,51,487)" x="0" y="0" font-size="10" font-weight="bold" fill="white" text-anchor="middle" font-family="Times New Roman, Times, serif">ELIGIBILITY</text>
+
+  <!-- Included -->
+  <rect x="8" y="590" width="86" height="120" rx="5" fill="#1a5276"/>
+  <text transform="rotate(-90,51,650)" x="0" y="0" font-size="10" font-weight="bold" fill="white" text-anchor="middle" font-family="Times New Roman, Times, serif">INCLUDED</text>
+
+  <!-- ===== DATABASE BOXES ===== -->
+  <!-- IEEE Xplore -->
+  <rect x="108" y="38" width="118" height="60" rx="4" class="db-box"/>
+  <text x="167" y="58" class="db-label" font-weight="bold">IEEE Xplore</text>
+  <text x="167" y="72" class="db-label">(n = 156)</text>
+  <text x="167" y="86" class="db-label">records identified</text>
+
+  <!-- Scopus -->
+  <rect x="238" y="38" width="118" height="60" rx="4" class="db-box"/>
+  <text x="297" y="58" class="db-label" font-weight="bold">Scopus</text>
+  <text x="297" y="72" class="db-label">(n = 201)</text>
+  <text x="297" y="86" class="db-label">records identified</text>
+
+  <!-- Google Scholar -->
+  <rect x="368" y="38" width="118" height="60" rx="4" class="db-box"/>
+  <text x="427" y="58" class="db-label" font-weight="bold">Google Scholar</text>
+  <text x="427" y="72" class="db-label">(n = 287)</text>
+  <text x="427" y="86" class="db-label">records identified</text>
+
+  <!-- ACM DL -->
+  <rect x="498" y="38" width="118" height="60" rx="4" class="db-box"/>
+  <text x="557" y="58" class="db-label" font-weight="bold">ACM Digital Library</text>
+  <text x="557" y="72" class="db-label">(n = 112)</text>
+  <text x="557" y="86" class="db-label">records identified</text>
+
+  <!-- Arrows from DB boxes converging down -->
+  <line x1="167" y1="98" x2="167" y2="118" class="arrow"/>
+  <line x1="297" y1="98" x2="297" y2="118" class="arrow"/>
+  <line x1="427" y1="98" x2="427" y2="118" class="arrow"/>
+  <line x1="557" y1="98" x2="557" y2="118" class="arrow"/>
+  <line x1="167" y1="118" x2="557" y2="118" stroke="#2c3e6b" stroke-width="1.8"/>
+  <line x1="362" y1="118" x2="362" y2="140" class="arrow"/>
+
+  <!-- Total identified box -->
+  <rect x="248" y="140" width="228" height="55" rx="4" class="box"/>
+  <text x="362" y="162" class="title-text">Total Records Identified</text>
+  <text x="362" y="178" class="count-text">n = 756</text>
+
+  <!-- Arrow down -->
+  <line x1="362" y1="195" x2="362" y2="220" class="arrow"/>
+
+  <!-- After duplicates removed -->
+  <rect x="248" y="220" width="228" height="55" rx="4" class="box"/>
+  <text x="362" y="242" class="title-text">After Duplicate Removal</text>
+  <text x="362" y="258" class="count-text">n = 523</text>
+
+  <!-- Exclusion note: duplicates -->
+  <rect x="510" y="225" width="185" height="45" rx="4" class="exclude-box"/>
+  <text x="520" y="242" class="exclude-text">Duplicates removed:</text>
+  <text x="520" y="256" class="exclude-text">n = 233 records excluded</text>
+  <line x1="476" y1="247" x2="510" y2="247" class="arrow-red"/>
+
+  <!-- Arrow down to screening -->
+  <line x1="362" y1="275" x2="362" y2="300" class="arrow"/>
+
+  <!-- ===== SCREENING ===== -->
+  <!-- Records screened -->
+  <rect x="248" y="300" width="228" height="55" rx="4" class="box"/>
+  <text x="362" y="322" class="title-text">Records Screened</text>
+  <text x="362" y="338" class="title-text">(Title &amp; Abstract)</text>
+  <text x="362" y="352" font-size="11" font-weight="bold" fill="#2c3e6b" text-anchor="middle">n = 523</text>
+
+  <!-- Exclusion - screening -->
+  <rect x="510" y="305" width="185" height="45" rx="4" class="exclude-box"/>
+  <text x="520" y="322" class="exclude-text">Records excluded:</text>
+  <text x="520" y="336" class="exclude-text">n = 436 (off-topic, non-cloud)</text>
+  <line x1="476" y1="327" x2="510" y2="327" class="arrow-red"/>
+
+  <line x1="362" y1="355" x2="362" y2="380" class="arrow"/>
+
+  <!-- ===== ELIGIBILITY ===== -->
+  <!-- Full-text assessed -->
+  <rect x="248" y="380" width="228" height="55" rx="4" class="box"/>
+  <text x="362" y="402" class="title-text">Full-Text Articles Assessed</text>
+  <text x="362" y="418" class="title-text">for Eligibility</text>
+  <text x="362" y="432" font-size="11" font-weight="bold" fill="#2c3e6b" text-anchor="middle">n = 87</text>
+
+  <!-- Exclusion full-text reasons -->
+  <rect x="510" y="375" width="215" height="115" rx="4" class="exclude-box"/>
+  <text x="520" y="393" class="exclude-text" font-weight="bold">Full-text excluded (n = 69):</text>
+  <text x="520" y="408" class="exclude-text">• Insufficient topical relevance: n = 35</text>
+  <text x="520" y="422" class="exclude-text">• Methodological inadequacy: n = 19</text>
+  <text x="520" y="436" class="exclude-text">• Full text unavailable: n = 10</text>
+  <text x="520" y="450" class="exclude-text">• Duplicate reporting: n = 5</text>
+  <line x1="476" y1="432" x2="510" y2="432" class="arrow-red"/>
+
+  <line x1="362" y1="435" x2="362" y2="460" class="arrow"/>
+
+  <!-- Quality appraisal box -->
+  <rect x="248" y="460" width="228" height="55" rx="4" class="box"/>
+  <text x="362" y="481" class="title-text">Quality Appraisal</text>
+  <text x="362" y="495" class="title-text">(MMAT — 5 dimensions)</text>
+  <text x="362" y="510" font-size="10" fill="#2c3e6b" text-anchor="middle">18 studies appraised; 0 excluded</text>
+
+  <line x1="362" y1="515" x2="362" y2="545" class="arrow"/>
+
+  <!-- ===== INCLUDED ===== -->
+  <rect x="200" y="545" width="324" height="85" rx="5" class="include-box" stroke-width="2.5"/>
+  <text x="362" y="568" class="title-text" font-size="11">Studies Included in Synthesis</text>
+  <text x="362" y="588" style="font-size:22px;font-weight:bold;fill:#2c3e6b;text-anchor:middle;">n = 18</text>
+  <text x="362" y="610" class="body-text" style="font-size:9.5px;">Peer-reviewed articles (2015–2026)</text>
+  <text x="362" y="624" class="body-text" style="font-size:9.5px;">IEEE Xplore · Scopus · Google Scholar · ACM DL</text>
+
+  <!-- Legend -->
+  <rect x="108" y="665" width="530" height="90" rx="4" fill="#f8f9fc" stroke="#ccc" stroke-width="1"/>
+  <text x="373" y="683" font-size="9.5" font-weight="bold" fill="#2c3e6b" text-anchor="middle">Study Characteristics Summary</text>
+  <text x="120" y="700" font-size="8.5" fill="#333">Study types:</text>
+  <text x="120" y="714" font-size="8.5" fill="#333">• Systematic reviews: 7</text>
+  <text x="120" y="727" font-size="8.5" fill="#333">• Empirical/framework studies: 6</text>
+  <text x="120" y="740" font-size="8.5" fill="#333">• Legal/policy analyses: 5</text>
+  <text x="280" y="700" font-size="8.5" fill="#333">Geographic focus:</text>
+  <text x="280" y="714" font-size="8.5" fill="#333">• Bangladesh-specific: 5</text>
+  <text x="280" y="727" font-size="8.5" fill="#333">• Developing countries: 4</text>
+  <text x="280" y="740" font-size="8.5" fill="#333">• Global/multi-regional: 9</text>
+  <text x="450" y="700" font-size="8.5" fill="#333">Cloud service models:</text>
+  <text x="450" y="714" font-size="8.5" fill="#333">• IaaS-focused: 8</text>
+  <text x="450" y="727" font-size="8.5" fill="#333">• SaaS-focused: 4</text>
+  <text x="450" y="740" font-size="8.5" fill="#333">• Multi-model: 6</text>
+
+  <!-- Footer -->
+  <text x="380" y="798" font-size="8" fill="#888" text-anchor="middle" font-style="italic">Fig. 1. PRISMA 2020 Flow Diagram for Cloud Forensics Systematic Review (Bangladesh Context). Adapted from Page et al. (2021).</text>
+</svg>
+</body>
+</html>

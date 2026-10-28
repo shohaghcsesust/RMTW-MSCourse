@@ -1,0 +1,143 @@
+5 Questions. 5x8=40 (converted to 20 later)
+
+1. Objective, Method, Result & Impact-related question:
+	a. Paper 1
+	b. Paper 2
+	c. Paper 3
+	d. Paper 4
+
+2-5 line answers:
+a. What is the actual problem? 
+b. What is/are the objectives? What method is used here? 
+c. What is achieved here? 
+d. How is the solution achieved? 
+e. Tell about the results and outcome.
+f. What are the impacts in the real world? 
+g. What dataset is used here? 
+h. What is the purpose of the paper and this dataset?
+i. What is evaluated here?
+j. What type of analysis is done here? Quantitative or qualitative?
+
+
+
+2. How to improve your writing + assignment er part
+
+3. Literature review-related, What components are needed to write a Thesis Paper? Problem-solving techniques and scenario-based solutions.
+
+4 & 5. Statistics-related questions. From Lectures 18 and 25 September.
+
+Data distribution, data analysis, hypothesis, statistical methods, quantitative & qualitative analysis etc..
+
+---------------------
+Prompt: "You are an expert academic research assistant and tutor. I have provided 4 research papers/sources. Read each source carefully and analyze them independently.
+For EACH paper, create exactly 15 important questions with short answers (60 questions total).
+The questions must focus on understanding the research paper from a research methodology, presentation, viva, and supervisor-discussion perspective.
+Question Areas
+Across the 15 questions for each paper, cover the following as relevant:
+What is the actual problem addressed by the paper?
+What research gap or limitation does it address?
+What are the main objectives?
+What is the purpose of the paper?
+What dataset/data is used? Where does it come from?
+Why is this dataset/data used?
+What methodology or research method is used?
+What model, algorithm, framework, technique, or procedure is used?
+How is the proposed solution/approach achieved?
+What type of analysis is performed: quantitative, qualitative, or mixed-methods?
+What is evaluated?
+How is the solution/method evaluated? What metrics, criteria, experiments, or baselines are used?
+What are the main results?
+What was achieved and what are the main outcomes?
+What are the real-world impacts, applications, limitations, or recommendations?
+Adapt the questions to the actual paper. Do not force a question if that topic does not apply. For example, if a paper does not use a conventional dataset, ask about the actual data, participants, case study, experiment, simulation, or evidence used.
+Answer Requirements
+For every question, provide a short answer of approximately 2–5 sentences.
+Answers must:
+Directly answer the question.
+Be clear, concise, and easy to memorize.
+Focus on the most important information.
+Include important numbers, datasets, methods, models, metrics, and results when relevant.
+Be based ONLY on the corresponding source.
+Never mix information between papers.
+Never invent or assume information.
+If the source does not provide enough information, simply write:
+"The source does not provide sufficient information to answer this."
+Do not create explanations about missing information beyond this unless necessary.
+Question Quality
+Make the 15 questions specific to the paper, not generic.
+Avoid:
+Repetitive questions
+Questions that only ask about the abstract
+Trivial factual questions
+Unnecessary background questions
+Long multi-part questions
+Prioritize questions that help me explain the paper to my supervisor, such as:
+Problem → Research Gap → Objective → Purpose → Data → Method → Analysis → Proposed Solution → Evaluation → Results → Outcome → Impact
+Required Format
+Paper 1: [Full Paper Title]
+Q1. [Question]
+Answer: [2–5 sentences]
+Q2. [Question]
+Answer: [2–5 sentences]
+Continue until Q15.
+Then repeat the exact structure for Papers 2, 3, and 4.
+Separate Answer Key
+After all 60 questions and answers, create a concise answer key for quick revision.
+Paper 1 — Answer Key
+[Short answer]
+[Short answer]
+...
+[Short answer]
+Repeat for Papers 2, 3, and 4.
+The answer key should contain only the essential points, not lengthy explanations.
+Four-Paper Comparison
+Create a concise comparison table:
+Aspect	Paper 1	Paper 2	Paper 3	Paper 4
+Problem				
+Objective				
+Dataset/Data				
+Methodology				
+Analysis Type				
+Proposed Solution				
+Evaluation				
+Main Results				
+Impact/Application				
+Glossary
+Finally, provide a concise glossary of the most important technical terms from all 4 papers.
+Include approximately 5–10 key terms per paper.
+Format:
+Term: [Term]
+Definition: [1–2 sentence definition based on the source]
+Include important technical concepts, methods, models, algorithms, variables, evaluation metrics, frameworks, datasets, and abbreviations.
+Strict Instructions
+Exactly 15 questions per paper.
+Exactly 60 questions total.
+Keep answers normally 2–5 sentences.
+Keep the four papers completely separate.
+Use only information supported by the sources.
+Do not fabricate missing information.
+Do not turn the study guide into a long academic essay.
+Do not add unnecessary "strategic mandates," "context," or commentary.
+Do not repeat the same information across multiple questions unless necessary.
+Where available, mention the relevant page, section, figure, or table, but never invent a reference.
+The final output should be concise, factual, exam-friendly, and suitable for a research presentation/viva."
+
+---------
+Paper Reading e ei question gulo add koiren.
+
+1. 
+(a) Paper: Digital health inclusion towards achieving universal health coverage for Bangladesh utilizing general practitioner model.
+Question: State the goal of this research paper in one sentence. What objectives author want to achieve here? How many participants used in this research? 
+(b)	Paper: Swallowing accelerometry signal feature variations with sensor displacement.   	
+Question: State the goal of this research in one sentence. How many feature domains they used, and list all features name? Which statistical method used to test significant difference among position variations and also why used this method?  
+(c)	Paper: Development of an Intelligent Platform to Digitize Marriage, Empower Married Couple for Life and Family Wellbeing Towards Digital Bangladesh.       					
+Question: State the goal of this research in one sentence. What objectives author want to achieve here? Write the outcome of this research? 
+(d)	Paper: CMED: Cloud based medical system framework for rural health monitoring in developing countries.
+Question: State the goal of this research in one sentence. Is this research having any social impact? If yes, please write it.
+
+2.
+(a) Illustrate the process of identifying a research problem and developing research questions. 
+(b) Dhaka north city corporation (DNCC) is facing problem to manage garbage collection and disposal in the city. They are looking for smart solution for it and want to make the city with a vision, "Clean City is Smart City" to improve the situation and create awareness. Your task is to propose a solution based on your research knowledge that can address the problem and help to achieve the vision.    
+(c)	List the basic components of writing a thesis or research paper.	 	
+(d)	Why we need literature survey for research design? Write the structure of writing literature survey in the research paper.
+

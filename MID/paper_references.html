@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cloud Forensics Reference Papers</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f7fb; color: #1a1a2e; padding: 24px 16px; }
+  .header { background: #1E2761; color: white; border-radius: 10px; padding: 24px 28px; margin-bottom: 24px; }
+  .header h1 { font-size: 20px; margin-bottom: 6px; }
+  .header p { font-size: 13px; color: #CADCFC; }
+  .header .sub { font-size: 12px; color: #02C39A; margin-top: 4px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 18px; }
+  .badge { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: 20px; font-size: 11.5px; font-weight: 600; }
+  .badge.open { background: #D1FAE5; color: #065F46; border: 1px solid #6EE7B7; }
+  .badge.login { background: #FEF3C7; color: #92400E; border: 1px solid #FCD34D; }
+  .badge.google { background: #EDE9FE; color: #4C1D95; border: 1px solid #C4B5FD; }
+  .section-label { font-size: 11px; font-weight: 700; color: #6B7280; text-transform: uppercase; letter-spacing: 1px; margin: 20px 0 8px; }
+  .card { background: white; border-radius: 10px; padding: 18px 20px; margin-bottom: 12px; border-left: 4px solid #1E2761; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+  .card.open-access { border-left-color: #059669; }
+  .card.login-required { border-left-color: #D97706; }
+  .card.scholar { border-left-color: #7C3AED; }
+  .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
+  .ref-num { background: #1E2761; color: white; font-size: 11px; font-weight: bold; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .card-body { flex: 1; }
+  .paper-title { font-size: 14px; font-weight: 700; color: #1E2761; margin-bottom: 4px; line-height: 1.4; }
+  .authors { font-size: 12px; color: #374151; margin-bottom: 2px; }
+  .venue { font-size: 11.5px; color: #6B7280; margin-bottom: 8px; }
+  .finding { background: #F0F7FF; border-radius: 6px; padding: 6px 10px; font-size: 12px; color: #1e3a5f; margin-bottom: 10px; line-height: 1.5; }
+  .finding strong { color: #1E2761; }
+  .links { display: flex; gap: 8px; flex-wrap: wrap; }
+  .btn { display: inline-flex; align-items: center; gap: 5px; padding: 6px 14px; border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; cursor: pointer; }
+  .btn-primary { background: #1E2761; color: white; }
+  .btn-primary:hover { background: #16204f; }
+  .btn-pdf { background: #059669; color: white; }
+  .btn-pdf:hover { background: #047857; }
+  .btn-scholar { background: #7C3AED; color: white; }
+  .btn-scholar:hover { background: #6D28D9; }
+  .btn-researchgate { background: #00CCBB; color: white; }
+  .btn-researchgate:hover { background: #00A89A; }
+  .note { font-size: 11px; color: #9CA3AF; font-style: italic; margin-top: 4px; }
+  .tip-box { background: #FFFBEB; border: 1px solid #FCD34D; border-radius: 8px; padding: 12px 16px; margin: 20px 0 0; font-size: 12.5px; color: #78350F; line-height: 1.6; }
+  .tip-box strong { color: #92400E; }
+  .count-tag { background: #EEF2FF; color: #3730A3; font-size: 11px; font-weight: 600; border-radius: 4px; padding: 2px 7px; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📚 Reference Papers — Cloud Forensics in Bangladesh</h1>
+  <p>A PRISMA-Guided Systematic Review | CSE 6093 RMTW | Md. Ahsan Kabir</p>
+  <p class="sub">8 key papers · Click any link below to open or download directly in your browser</p>
+</div>
+
+<div class="legend">
+  <span class="badge open">🟢 Open Access — Free Direct PDF</span>
+  <span class="badge login">🟡 Free via Google Scholar / SSRN login</span>
+  <span class="badge google">🔵 Google Scholar Search link provided</span>
+</div>
+
+<!-- ══════════ GLOBAL CLOUD FORENSICS ══════════ -->
+<div class="section-label">🌐 Cloud Forensics — Systematic Reviews & Frameworks</div>
+
+<!-- Paper 1 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">1</div>
+    <div class="card-body">
+      <div class="paper-title">Forensic Investigation, Challenges, and Issues of Cloud Data: A Systematic Literature Review</div>
+      <div class="authors">Alshabibi, M.M., Budookhi, A.K., & Rahman, M.M.H.</div>
+      <div class="venue">📰 <em>Computers</em>, MDPI, Vol. 13, No. 8, Art. 213, August 2024 &nbsp;<span class="count-tag">[Ref. 7 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> PRISMA review of 20 studies — 42% technical / 30% resource / 28% legal challenges. ML + blockchain are top emerging solutions. This is the closest direct methodology model for your review.</div>
+      <div class="links">
+        <a class="btn btn-pdf" href="https://www.mdpi.com/2073-431X/13/8/213/pdf" target="_blank">⬇ Download PDF (MDPI)</a>
+        <a class="btn btn-primary" href="https://www.mdpi.com/2073-431X/13/8/213" target="_blank">🔗 Article Page</a>
+        <a class="btn btn-researchgate" href="https://www.researchgate.net/publication/383338595" target="_blank">ResearchGate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 2 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">2</div>
+    <div class="card-body">
+      <div class="paper-title">A Systematic Literature Review on Cloud Forensics in Cloud Environment</div>
+      <div class="authors">Bai, V.S. & Sudha, T.</div>
+      <div class="venue">📰 <em>Int. J. Intelligent Systems & Applications in Engineering (IJISAE)</em>, Vol. 11, No. 4, 2023 &nbsp;<span class="count-tag">[Ref. 8 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> 83-paper 10-year SLR. Evidence collection is the #1 bottleneck. Catalogues 15+ frameworks (CLASS, CFLOG, SecLaaS). Peak of framework proposals was 2015–16; now AI/blockchain dominate.</div>
+      <div class="links">
+        <a class="btn btn-pdf" href="https://ijisae.org/index.php/IJISAE/article/download/2727/1307/7643" target="_blank">⬇ Download PDF (IJISAE)</a>
+        <a class="btn btn-primary" href="https://ijisae.org/index.php/IJISAE/article/view/2727" target="_blank">🔗 Article Page</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 3 -->
+<div class="card login-required">
+  <div class="card-top">
+    <div class="ref-num">3</div>
+    <div class="card-body">
+      <div class="paper-title">A Systematic Literature Review of Latest Cloud Forensic Frameworks, Tools and Challenges</div>
+      <div class="authors">Multiple authors</div>
+      <div class="venue">📰 <em>IEEE Xplore</em>, 2024 Conference Paper, DOI: 10.1109/... &nbsp;<span class="count-tag">[Related — IEEE]</span></div>
+      <div class="finding"><strong>Key finding:</strong> Most recent IEEE-indexed SLR on cloud forensic frameworks and tools — highly citable for your methodology section.</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://ieeexplore.ieee.org/document/10396682/" target="_blank">🔗 IEEE Xplore (log in via university)</a>
+        <a class="btn btn-researchgate" href="https://www.researchgate.net/publication/377611405" target="_blank">ResearchGate (request full text)</a>
+        <a class="btn btn-scholar" href="https://scholar.google.com/scholar?q=Systematic+Literature+Review+Latest+Cloud+Forensic+Frameworks+Tools+Challenges+2024" target="_blank">Google Scholar</a>
+      </div>
+      <div class="note">💡 Use university VPN + IEEE subscription or request via ResearchGate</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ LEGAL / CROSS-BORDER ══════════ -->
+<div class="section-label">⚖️ Legal, Jurisdictional & Cross-Border Forensics</div>
+
+<!-- Paper 4 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">4</div>
+    <div class="card-body">
+      <div class="paper-title">Investigating the Legal Complexities of Cloud Forensic Investigations in Cross-Border Scenarios and Developing Strategies for International Cooperation</div>
+      <div class="authors">Ekwempu, F.C. (University of East London)</div>
+      <div class="venue">📰 <em>Int. J. Research Innovation Applied Science (IJRIAS)</em>, Vol. 11, No. 1, Jan. 2026 &nbsp;<span class="count-tag">[Ref. 9 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> Jurisdictional overlap and absent MLATs are the core legal barriers in cross-border cloud forensics. Directly supports your RQ3 on Bangladesh's missing MLAT framework.</div>
+      <div class="links">
+        <a class="btn btn-pdf" href="https://rsisinternational.org/journals/ijrias/uploads/vol11-iss1-pg1334-1359-202602_pdf.pdf" target="_blank">⬇ Download PDF (IJRIAS)</a>
+        <a class="btn btn-primary" href="https://rsisinternational.org/journals/ijrias/view/investigating-the-legal-complexities-of-cloud-forensic-investigations-in-cross-border-scenarios-and-developing-strategies-for-international-cooperation" target="_blank">🔗 Article Page</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 5 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">5</div>
+    <div class="card-body">
+      <div class="paper-title">Comparative Analysis of NIST SP 800-86 Framework in Handling Digital Evidence in Cloud Computing Environment</div>
+      <div class="authors">Ibrahim, A.M., Sutrisno, M., & Asrudin</div>
+      <div class="venue">📰 <em>J. of Nexural Intelligence</em>, Vol. 4, No. 1, 2026 &nbsp;<span class="count-tag">[Ref. 13 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> NIST SP 800-86 has a 54.9% coverage gap in developing-nation cloud contexts (Indonesia — comparable to Bangladesh). −75% on multi-tenancy, −77% on cloud-native architectures.</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://jurnal.citanusantara.id/index.php/nexural/article/view/260" target="_blank">🔗 Article Page (open access journal)</a>
+        <a class="btn btn-scholar" href="https://scholar.google.com/scholar?q=NIST+SP+800-86+Framework+Handling+Digital+Evidence+Cloud+Computing+Ibrahim+2026" target="_blank">Google Scholar</a>
+      </div>
+      <div class="note">💡 Click the article page → look for "PDF" button on the journal site</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ BANGLADESH-SPECIFIC ══════════ -->
+<div class="section-label">🇧🇩 Bangladesh-Specific: Cyber Law & Digital Evidence</div>
+
+<!-- Paper 6 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">6</div>
+    <div class="card-body">
+      <div class="paper-title">Cyber Security Governance Under the Cyber Laws of Bangladesh: An Overview</div>
+      <div class="authors">Hossain, M.S. & Mallika, M.</div>
+      <div class="venue">📰 <em>Int. J. Research Innovation Social Science (IJRISS)</em>, Vol. 9, No. 4, May 2025 &nbsp;<span class="count-tag">[Ref. 5 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> Cybercrime cases in Bangladesh ×4 from 2018–2023. CSA 2023 criticized for recycling DSA flaws. Analyses ICT Act 2006 + Cyber Security Act 2023 governance structure.</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://rsisinternational.org/journals/ijriss/articles/cyber-security-governance-under-the-cyber-laws-of-bangladesh-an-overview/" target="_blank">🔗 Article Page (IJRISS)</a>
+        <a class="btn btn-scholar" href="https://scholar.google.com/scholar?q=Cyber+Security+Governance+Cyber+Laws+Bangladesh+Hossain+Mallika+2025" target="_blank">Google Scholar</a>
+      </div>
+      <div class="note">💡 On the article page click "Download PDF" — IJRISS is fully open access</div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 7 -->
+<div class="card open-access">
+  <div class="card-top">
+    <div class="ref-num">7</div>
+    <div class="card-body">
+      <div class="paper-title">Navigating Cybersecurity Challenges and Legal Frameworks in Bangladesh: An In-Depth Exploration</div>
+      <div class="authors">Momtaz, S. (Dept. of Law, Southern University Bangladesh)</div>
+      <div class="venue">📰 <em>Int. J. Research Innovation Social Science (IJRISS)</em>, Vol. 8, No. 1, Feb. 2024 &nbsp;<span class="count-tag">[Ref. 10 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> ICT Act 2006 lacks technical training requirements for judges; Section 82 immunity creates investigation bottlenecks. Analyses specialized Cyber Tribunals and their effectiveness.</div>
+      <div class="links">
+        <a class="btn btn-pdf" href="https://rsisinternational.org/journals/ijriss/Digital-Library/volume-8-issue-1/727-751.pdf" target="_blank">⬇ Download PDF (IJRISS)</a>
+        <a class="btn btn-primary" href="https://rsisinternational.org/journals/ijriss/articles/navigating-cybersecurity-challenges-and-legal-frameworks-in-bangladesh-an-in-depth-exploration/" target="_blank">🔗 Article Page</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 8 -->
+<div class="card login-required">
+  <div class="card-top">
+    <div class="ref-num">8</div>
+    <div class="card-body">
+      <div class="paper-title">Research Monograph on Cybercrime and Digital Evidence in Bangladesh: Problem and Prospect</div>
+      <div class="authors">Uzzal, Md. Mostafa Kamal (Uttara University)</div>
+      <div class="venue">📰 <em>SSRN Working Paper</em>, January 2025, DOI: 10.2139/ssrn.5876822 &nbsp;<span class="count-tag">[Ref. 4 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> CID forensic labs have persistent capacity deficits. Evidence Act 2022 still inadequate for cloud-stored ESI. Recommends comprehensive digital evidence legislation + forensic training overhaul.</div>
+      <div class="links">
+        <a class="btn btn-pdf" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5876822" target="_blank">🔗 SSRN Page (free download after login)</a>
+        <a class="btn btn-scholar" href="https://scholar.google.com/scholar?q=Cybercrime+Digital+Evidence+Bangladesh+Problem+Prospect+Uzzal+2025" target="_blank">Google Scholar</a>
+      </div>
+      <div class="note">💡 SSRN is free — create a free account or log in with Google, then click "Download"</div>
+    </div>
+  </div>
+</div>
+
+<!-- Paper 9 -->
+<div class="card login-required">
+  <div class="card-top">
+    <div class="ref-num">9</div>
+    <div class="card-body">
+      <div class="paper-title">Legal Framework to Investigate and Prosecute Cybercrimes in Bangladesh</div>
+      <div class="authors">Hasan, M.</div>
+      <div class="venue">📰 <em>Academia.edu</em>, 2021 (Working Paper) &nbsp;<span class="count-tag">[Ref. 12 in report]</span></div>
+      <div class="finding"><strong>Key finding:</strong> Bangladesh lacks dedicated cyber police and CERT. Investigation officers have no specialized digital forensics training. Conviction rates are low because evidence collected without proper chain-of-custody fails in court.</div>
+      <div class="links">
+        <a class="btn btn-primary" href="https://www.academia.edu/44942148/Legal_Framework_to_Investigate_and_Prosecute_Cybercrimes_in_Bangladesh" target="_blank">🔗 Academia.edu (free with account)</a>
+        <a class="btn btn-scholar" href="https://scholar.google.com/scholar?q=Legal+Framework+Investigate+Prosecute+Cybercrimes+Bangladesh+Hasan" target="_blank">Google Scholar</a>
+      </div>
+      <div class="note">💡 Academia.edu — log in with Google/Facebook for free download</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ TIP BOX ══════════ -->
+<div class="tip-box">
+  <strong>💡 Quick Download Tips</strong><br>
+  • <strong>Green cards (🟢)</strong> — direct PDF links, no login required. Click "⬇ Download PDF" and save.<br>
+  • <strong>Yellow cards (🟡)</strong> — free after a quick free sign-up on SSRN or Academia.edu (use your Google account).<br>
+  • <strong>IEEE paper (#3)</strong> — access via your university library VPN (most universities subscribe to IEEE Xplore), or request the full text free on ResearchGate.<br>
+  • <strong>Can't access a paper?</strong> Try <a href="https://scholar.google.com" target="_blank">Google Scholar</a> → search the title → look for [PDF] link on the right side, or use <a href="https://www.semanticscholar.org" target="_blank">Semantic Scholar</a> for free full-text versions.
+</div>
+
+<br>
+<p style="font-size:11px;color:#9CA3AF;text-align:center;padding-bottom:8px;">Generated for CSE 6093 RMTW Mid-Term Research — Cloud Forensics in Bangladesh — August 2026</p>
+
+</body>
+</html>
